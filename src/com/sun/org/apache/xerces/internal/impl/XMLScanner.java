@@ -991,6 +991,7 @@ public abstract class XMLScanner
                 if(fEntityScanner.whiteSpaceLen > 0)
                     normalizeWhitespace(value);
                 //Todo ::Move this check  to Attributes , do conversion
+
                 //only if attribute is being accessed. -Venu
             } while (c != quote || entityDepth != fEntityDepth);
             stringBuffer.append(value);
